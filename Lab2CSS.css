@@ -1,0 +1,825 @@
+body {
+    margin:0;
+    width:100%;
+    background: linear-gradient(to bottom, #FD6051 10%, #fe6f54 50%, #ffc06c 100%) no-repeat;
+}
+li{
+    display:block;
+}
+#Form {
+    width: 584px;
+    margin: 0 25%;
+    padding: 32px;
+    background-color: #F2F2F2;
+    display: none;
+    position: absolute;
+}
+    #Form:target {
+        display: block;
+        z-index: 10;
+    }
+.fields {
+    margin-top: 20px;
+}
+.cross {
+    color: #4F4F4F;
+    text-decoration: none;
+    font-size: 21px;
+    cursor: pointer;
+    top: 27px;
+    right: 19px;
+    position: absolute;
+    font-family: 'Trebuchet MS';
+}
+.close {
+    display: inline-block;
+    border: 1px solid #0000cc;
+    color: #0000cc;
+    padding: 0 12px;
+    margin: 10px;
+    text-decoration: none;
+    background: #f2f2f2;
+    font-size: 14pt;
+    cursor: pointer;
+}
+    .close:hover {
+        background: #e6e6ff;
+    }
+h2 {
+    width: 203px;
+    height: 19px;
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: bold;
+    top: 28px;
+    left: 32px;
+    margin: 0;
+    font-size: 25px;
+    line-height: 29px;
+    color: #4F4F4F;
+}
+
+.field-block {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+    .field-block label, .field-block .field {
+        display: block;
+        width: 584px;
+        margin-right: 32px;
+    }
+
+    .field-block label {
+        width: 149px;
+        height: 19px;
+        font-family: 'Trebuchet MS';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 17px;
+        color: #4F4F4F;
+    }
+
+    .field-block .field {
+        font-family: 'Trebuchet MS';
+        font-style: normal;
+        font-weight: normal;
+        line-height: 23px;
+        color: #4F4F4F;
+        font-size: 16px;
+        padding: 8px 0;
+        border: 0.2px solid #bdbdbd;
+    }
+
+        .field-block .field:focus {
+            border-color: #66afe9;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+        }
+
+    .field-block textarea {
+        resize: vertical;
+    }
+
+.check-text {
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.button {
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px 12px;
+    margin-bottom: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+    color: #999;
+    padding: 10px;
+}
+
+#loader {
+    display: none;
+}
+
+.button1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 202px;
+    height: 51px;
+    border: none;
+    background: #fbc74f;
+}
+
+    .button1:hover {
+        background: #FD6051;
+    }
+main{
+    position:relative;
+}
+h1 {
+    text-align:center;
+    position: relative;
+    font-size: 55px;
+    line-height: 55px;
+    color: #fbc74f;
+    margin:0 540px;
+    font-family: 'Trebuchet MS';
+
+}
+p {
+    position: relative;
+    width: auto;
+    margin: 10px 200px;
+    text-align: justify;
+    text-indent: 50px;
+    margin-bottom: 0;
+    font-family: 'Trebuchet MS';
+    color: #004179;
+}
+hr{
+    top:15px;
+    position:relative;
+}
+.textblock{
+    margin-top:560px;
+}
+.navigation {
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    padding:0;
+    display:flex;
+}
+
+.navigation li {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.navigation li:hover {
+    font-size:large;
+    text-decoration: underline;
+    background:#f9c4a8;
+
+}
+
+.container {
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    line-height: 16px;
+    margin: -10px 277px 0 210px;
+    height:115px;
+    width: auto;
+
+    display: flex;
+    background: #f6886d;
+}
+
+.container li a#menu {
+    display: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+nav input {
+    display: none;
+}
+
+nav label {
+    padding: 5vw 2vw;
+    color: #fbc74f;
+    display: none;
+    text-align: center;
+    font-size: 5vw;
+}
+
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.navigation > li {
+    
+    float: left;
+    position: relative;
+    display: block;
+}
+
+ul.navigation > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+.submenu {
+    margin-top:63px;
+    padding-left: 10px;
+    padding-right:63px;
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    top: 48px;
+    left: 20px;
+    background: #f9cabb;
+    z-index: 5;
+}
+
+.submenu > li {
+    display: block;
+    padding-left: 18px !important;
+    padding-top: 14px !important;
+    padding-bottom: 0px !important;
+    text-align: left !important;
+}
+
+.submenu > li > a {
+    font-family: 'Trebuchet MS';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    text-decoration: none;
+    color: rgba(0,0,0,1) !important;
+}
+
+.submenu > li:hover {
+    text-decoration: underline !important;
+    padding:0;
+    background:none;
+}
+
+.navigation > li:hover > ul.submenu {
+    display: block;
+}
+
+.label {
+    position: relative;
+    left:310px;
+    top:10px;
+    height:250px;
+    width:fit-content;
+}
+
+.picture {
+    position: absolute;
+    left: 337px;
+    top: 33px;
+    height: 500px;
+    width:fit-content;
+}
+
+.checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+
+.sidebar {
+    position: sticky;
+    z-index: 5;
+    margin-top: 5px;
+    background: #fbc74f;
+    padding: 10px;
+    width: 230px;
+    float: left;
+    top: 50px;
+    left: 0;
+}
+
+    .sidebar li a {
+        font-family: 'Trebuchet MS';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 44px;
+        display: block;
+        text-decoration: none;
+        color: rgba(0,0,0,1) !important;
+    }
+
+        .sidebar li a:hover {
+            text-decoration: underline;
+        }
+
+    .sidebar:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 250px;
+        width: 30px;
+        height: 50px;
+        background: #fcbf4e;
+    }
+
+.checkbox input:checked +.sidebar{
+    position:fixed;
+    top:auto;
+    margin-left:-258px;
+}
+
+
+
+#calendar {
+    width: 100%;
+    font: monospace;
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+}
+
+    #calendar thead tr:last-child {
+        font-size: small;
+        color: rgb(85, 85, 85);
+    }
+
+    #calendar thead tr:nth-child(1) td:nth-child(2) {
+        color: rgb(50, 50, 50);
+    }
+
+    #calendar thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+        cursor: pointer;
+    }
+
+    #calendar tbody td {
+        color: rgb(44, 86, 122);
+    }
+
+        #calendar tbody td:nth-child(n+6), #calendar2 .holiday {
+            color: rgb(231, 140, 92);
+        }
+
+        #calendar tbody td.today {
+            background: rgb(220, 0, 0);
+            color: #fff;
+        }
+
+.tabs {
+    position: relative;
+    width: auto;
+    margin: 10px 186px;
+    justify-content: center;
+    background: #e56c54;
+    padding: 0px;
+
+}
+
+.tabs > section {
+    display: none;
+    padding: 30px;
+    color: white;
+    background: #f68971;
+    border: none;
+    border-top: 0.2px solid #ddd;
+}
+
+    .tabs > input {
+        display: none;
+        position: absolute;
+    }
+
+    .tabs > label {
+        font-family: 'Trebuchet MS';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 28px;
+        display: inline-block;
+        padding: 30px;
+        font-weight: normal;
+        text-align: center;
+        color: white;
+        border: none;
+        background: #e56c54;
+    }
+
+    .tabs > label:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .tabs > input:checked + label {
+        color: #fbc74f;
+        border: none;
+        background: #f68971;
+        text-decoration: none;
+    }
+
+#tab1:checked ~ #content-tab1, #tab2:checked ~ #content-tab2, #tab3:checked ~ #content-tab3, #tab4:checked ~ #content-tab4, #tab5:checked ~ #content-tab5, #tab6:checked ~ #content-tab6, #tab7:checked ~ #content-tab7, #tab8:checked ~ #content-tab8{
+    display: block;
+}
+
+.container2 {
+    font-family: 'Trebuchet MS';
+    font-size: 16px;
+    line-height: 16px;
+    margin: 10px 180px;
+    width: auto;
+    display: flex;
+    background: #f6886d;
+    color: #fbc74f;
+}
+
+    .container2 li a {
+        text-decoration: none;
+        color: #fbc74f;
+        font-size:16px;
+    }
+.container2 li a:hover{
+    color:white;
+}
+.searcher {
+    top:-100px;
+    right:130px;
+    position: relative;
+    float: right;
+    display: inline-block;
+    border: none;
+    background: #fbc74f;
+}
+.searcher p{
+    margin:0;
+    top:0;
+    text-indent:0;
+}
+
+    .searcher input {
+        width: 60px;
+        height: 32px;
+        line-height: 32px;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        padding: 0 0 0 6px;
+        background: #fbc74f;
+        font-family: 'Trebuchet MS';
+        color: black;
+        text-shadow: 0 1px 0 #FFF;
+        transition: all .2s ease-out;
+    }
+.slider-container {
+    position: relative;
+    margin: 20px auto 0;
+    height: 0;
+    padding-bottom: 35%;
+}
+
+.slides {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+    .slides img {
+        margin: 0 15px;
+        display: inline-block;
+    }
+
+.slide_img {
+    display: none;
+}
+
+.switchers {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    margin-bottom:20px;
+    bottom: 0;
+    text-align: center;
+}
+
+.switcher {
+    background: #fdc84f;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 7px;
+    margin: 0 4px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#img_1:checked ~ #first,
+#img_2:checked ~ #second,
+#img_3:checked ~ #third {
+    visibility: visible;
+    opacity: 1;
+}
+
+#img_1:checked ~ div #switcher1,
+#img_2:checked ~ div #switcher2,
+#img_3:checked ~ div #switcher3 {
+    background: #fdd475;
+}
+
+
+footer {
+    margin-top:25px;
+    width: auto;
+    background: #fcc050;
+    color: #e56c54;
+    font-family:'Trebuchet MS';
+    padding: 20px;
+}
+footer a {
+    color: #e56c54;
+}
+
+footer a:hover{
+    color:white;
+}
+
+@media only screen and (max-width : 900px) {
+    #Form {
+        width: 55vw;
+        padding: 4vw;
+    }
+    .fields {
+        margin-top: 3vw;
+    }
+    .cross {
+        font-size: 3vw;
+        top: 4vw;
+        right: 3vw;
+    }
+
+    .close {
+        padding: 0 2vw;
+        margin: 2vw;
+        font-size: 14pt;
+    }
+    h2 {
+        width: 29vw;
+        height: 3vw;
+        top: 4vw;
+        left: 4vw;
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    .field-block {
+        margin-bottom: 3vw;
+    }
+        .field-block label, .field-block .field {
+            width: 55vw;
+            margin-right: 4vw;
+        }
+
+        .field-block label {
+            width: 21vw;
+            height: 3vw;
+            font-size: 2vw;
+            line-height: 3vw;
+        }
+
+        .field-block .field {
+            line-height: 3vw;
+            font-size: 2vw;
+            padding: 1vw 0;
+        }
+    .check-text {
+        font-size: 2vw;
+    }
+
+    .button {
+        font-size: 2vw;
+        padding: 1vw 2vw;
+        margin-bottom: 1vw;
+    }
+
+    .close-btn {
+        font-size: 6vw;
+        line-height: 3vw;
+        padding: 2vw;
+    }
+    .button1 {
+        font-size: 2vw;
+        line-height: 3vw;
+        width: 29vw;
+        height: 7vw;
+    }
+    h1 {
+        font-size: 8vw;
+        line-height: 8vw;
+        margin: 0 30vw;
+    }
+    p {
+        margin: 2vw 10vw;
+        text-indent: 7vw;
+    }
+    hr {
+        top: 2vw;
+    }
+
+    .textblock {
+        margin-top: 73vw;
+    }
+
+    .navigation {
+        display:none;
+    }
+        .navigation li {
+            float: none;
+            width: 100%;
+            padding: 0;
+            text-align: left;
+            background: #f6886d;
+        }
+    .container {
+        width:100%;
+        background:none;
+        margin:0;
+    }
+    nav label {
+        display:block;
+    }
+    ul.navigation > li {
+        padding:2vw;
+        width:20vw;
+        float: left;
+        position: relative;
+    }
+    #menuToggle:checked + .navigation {
+        display: grid;
+        position: absolute;
+        top: 9vw;
+        margin: 0;
+        z-index: 5;
+    }
+        .submenu {
+        margin-top: -7vw;
+        margin-left: 21vw;
+        padding-right: 9vw;
+        width: 14vw;
+        height: 17vw;
+        top: 7vw;
+        left: 3vw;
+    }
+        .submenu > li {
+            background:none!important;
+            display: block;
+            padding-left: 2vw !important;
+            padding-top: 2vw !important;
+        }
+
+            .submenu > li > a {
+                font-size: 2vw;
+                line-height: 3vw;
+            }
+            
+    .label {
+        left: 0;
+        top: 1vw;
+        height: 40vw;
+    }
+    .label img{
+        height:48vw;
+        width:100vw;
+    }
+
+    .picture {
+        left: 10vw;
+        top: 5vw;
+        height: 71vw;
+    }
+    .picture img{
+        height:65vw;
+    }
+
+    .checkbox input {
+        margin: 1vw 0 0 3vw;
+    }
+
+    .sidebar {
+        margin-top: 1vw;
+        padding: 2vw;
+        width: 33vw;
+        top: 7vw;
+    }
+    iframe {
+        width: 31vw;
+        height:20vw;
+    }
+    .sidebar li a {
+            font-size: 2vw;
+            line-height: 6vw;
+        }
+        .sidebar:before {
+            left: 36vw;
+            width: 4vw;
+            height: 7vw;
+        }
+
+    .checkbox input:checked + .sidebar {
+        margin-left: -37vw;
+    }
+    #calendar {
+        font-size: 2vw;
+    }
+    .tabs {
+        margin: 1vw 13vw;
+    }
+        .tabs > section {
+            padding: 4vw;
+        }
+        .tabs > label {
+            font-size: 3vw;
+            line-height: 4vw;
+            padding: 4vw;
+        }
+        
+    .container2 {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin: 1vw 13vw;
+    }
+
+        .container2 li a {
+            font-size: 3vw;
+        }
+    .searcher {
+        top: -14vw;
+        right: 5vw;
+    }
+    .searcher input {
+            width: 8vw;
+            height: 5vw;
+            line-height: 5vw;
+            padding: 0 0 0 1vw;
+        }
+
+    .slider-container {
+        margin: 3vw auto 0;
+        height: 5vw;
+    }
+        .slides img {
+            margin: 0 0 0 0.4vw;
+            height: 32vw;
+            display: inline-block;
+        }
+
+    .switchers {
+        height: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    .switcher {
+        width: 4vw;
+        height: 4vw;
+        top: 1vw;
+        margin: 0 1vw;
+    }
+    footer {
+        margin-top: 4vw;
+        padding: 3vw;
+    }
+}

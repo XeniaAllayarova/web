@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="Lab2CSS.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8" />
+    <title>Flёur</title>
+</head>
+<body>
+    <div id="Form">
+        <h2>Регистрация</h2>
+        <a href="#" class="cross">&times;</a>
+        <div class="fields">
+            <div class="field-block">
+                <label for="name">Имя<a style="color: red">*</a></label>
+                <input id="name" class="field" name="name" required type="text" placeholder="Имя">
+            </div>
+            <div class="field-block">
+                <label for="surname">Фамилия<a style="color: red">*</a></label>
+                <input id="surname" class="field" name="surname" required type="text" placeholder="Фамилия">
+            </div>
+            <div class="field-block">
+                <label for="email">E-mail<a style="color: red">*</a></label>
+                <input id="email" class="field" name="email" required type="email" placeholder="example@email.ru">
+            </div>
+            <div class="field-block">
+                <label for="password">Пароль<a style="color: red">*</a></label>
+                <input id="password" class="field" name="password" required type="text" placeholder="**********">
+            </div>
+        </div>
+        <button id="button" class="button1" type="submit">Зарегистрироваться</button>
+    </div>
+    <header>
+        <nav>
+            <div class="container">
+                <label for="menuToggle">Меню</label>
+                <input id="menuToggle" type="checkbox">
+                <ul class="navigation clearfix">
+                    <li><a href="#">Главная</a></li>
+                    <li>
+                        <a href="#">Музыка</a>
+                        <ul class="submenu">
+                            <li><a href="#">Жанры</a></li>
+                            <li><a href="#">Группы</a></li>
+                            <li><a href="#">Альбомы</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">История</a></li>
+                    <li><a href="#Form">Регистрация</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <form class="searcher">
+            <p>
+                <input type="search" name="q" placeholder="Поиск">
+                <input type="submit" value="">
+            </p>
+        </form>
+        <div id="Form">
+            <h2>Регистрация</h2>
+            <a href="#" class="cross">&times;</a>
+            <hr>
+            <div class="fields">
+                <div class="field-block">
+                    <label for="name">Имя<a style="color: red">*</a></label>
+                    <input id="name" class="field" name="name" required type="text" placeholder="Имя">
+                </div>
+                <div class="field-block">
+                    <label for="surname">Фамилия<a style="color: red">*</a></label>
+                    <input id="surname" class="field" name="surname" required type="text" placeholder="Фамилия">
+                </div>
+                <div class="field-block">
+                    <label for="email">E-mail<a style="color: red">*</a></label>
+                    <input id="email" class="field" name="email" required type="email" placeholder="example@email.ru">
+                </div>
+            </div>
+            <div class="result">
+                <span id="answer"></span>
+            </div>
+            <button id="button" class="button1" type="submit">Зарегистрироваться</button>
+        </div>
+        <div class="label">
+            <img src="img\label.png" height="340" width="700">
+        </div>
+
+    </header>
+    <main>
+
+        <hr color="#fbc74f" size="5">
+        <label class="checkbox">
+            <input type="checkbox" />
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#story">История</a></li>
+                    <li><a href="#galery">Галерея</a></li>
+                    <li><a href="#albums">Альбомы</a></li>
+                    <li><a href="#other">Другие проекты</a></li>
+                </ul>
+                <table id="calendar">
+                    <thead>
+                        <tr><td colspan="4"><td colspan="3">
+                        <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
+                    <tbody>
+                </table>
+                <div style="overflow:hidden;width: 220px;position: relative;">
+                    <iframe width="220" height="140" src="https://maps.google.com/maps?width=220&amp;height=140&amp;hl=en&amp;q=Odessa+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/de/">embedgooglemaps DE</a> & <a href="https://iamsterdamcard.it">iamsterdamcard.it</a></small></div>
+                </div><br />
+            </div>
+        </label>
+        <div class="picture">
+            <img src="img\R3NB8d-Zinc.jpg" height="525">
+        </div>
+        <div class="textblock">
+            <h1 id="story">История</h1>
+            <p>История группы Flёur берёт своё начало в 1999-м году, когда в Одессе встречаются две девушки – Ольга Пулатова и Елена Войнаровская. Лена к этому моменту уже была знакома с творчеством Оли, которая пела раньше в группе «Аэроплан». А вот Оле доводится услышать песни Лены лишь спустя полгода после встречи. Их идеи и настроения оказываются очень близки, и девушки начинают совместные домашние репетиции.
+            <p>Первое публичное выступление группы происходит 17 марта 2000-го, на вечере радиопрограммы «Атмосфера». Когда-то в этой передаче звучали песни группы «Аэроплан», где их и слышала Лена; в феврале 2000-го в эфире звучит песня «Уходи, февраль», и объявления о поиске музыкантов в новый проект. Так, к первому выступлению девушек становится трое. В коллективе появляется флейтистка Юлия Земляная.  Группа получает название Flёur.
+            <p>17 июня 2000-го, первый сольный концерт. На сцене одесского Дома Актёра уже пятеро участников. Помимо Оли, Лены и Юли – это виолончелистка Екатерина Сербина и перкуссионист Владислав Мицовский. На том же выступлении записывается полуконцертный-полурепетиционный альбом «Почти живой». К следующему концерту в составе появляется барабанщик Алексей Ткачевский, который слышал группу ещё на вечере «Атмосферы», и проникся музыкой Flёur. Позже ритм-секцию дополняет контрабасист Виталий Дидык. Несмотря на то, что первые выступления проходят без рекламы и афиш, слушателей Flёur становится всё больше. 10 ноября Дом Актера с трудом вмещает всех желающих. На этом концерте записывается второй «живой» альбом – «Сердце». Спустя несколько лет эти альбомы будут выпущены официально.
+            <p>20 января 2001-го Flёur впервые выступают в Киеве, а в мае приступают к работе над первым студийным альбомом. Тем временем, группу замечает французский лейбл Prikosnovenie. Осенью 2002-го появляется дебютный альбом Flёur «Прикосновение» – первая часть трилогии, выходящей одновременно во Франции и Украине. За «Прикосновением» следуют «Волшебство» и «Сияние» (2004). Во время записи «Волшебства» к группе присоединяется скрипачка Анастасия Кузьмина, на смену Екатерине Сербиной приходит Александра Дидык, а место за синтезатором занимает Екатерина Котельникова. Годом позже, Юлия Земляная также уступает место Алле Лужецкой.
+            <p>Работа над четвёртым студийным альбомом начиналась с большим энтузиазмом и надеждами, а заканчивалась уже без участия группы. «Всё вышло из-под контроля» – весьма символичное для альбома название. В апреле-мае 2006 года группа совершает свой первый тур по Украине и даёт серию концертов в клубах Москвы и Петербурга в поддержку вышедшего альбома.
+            <p>В январе-феврале 2007-го группа совершает самый большой и сложный тур, по 12 городам России и Беларуси. Растущая известность группы приковывает внимание редакторов крупнейшей российской радиостанции «НАШЕ Радио». Весной 2007-го в радиоэфире появляется песня «Шелкопряд», мгновенно взлетающая на вершину чарта. Вслед за ней на волнах «НАШЕго» звучат «Два облака» и «Тёплые коты», записанные на петербуржской студии группы «Аквариум» для сингла «Два облака», который выходит в декабре 2007-го.
+            <p>Начало 2008-го Flёur проводят в студии, работая над новым диском. В начале марта Flёur делают перерыв в работе над диском, чтобы приехать в Москву и выступить на фестивале-премии «НАШЕго Радио» «Чартова Дюжина» в Олимпийском. Там Flёur также получают награду победителей в номинации «Взлом чарта», как лучшая новая группа. Вскоре после этого Flёur дают большой сольный концерт на сцене легендарного МХАТа им. Горького.
+            <p>17 апреля 2008-го проходит радиопрезентация альбома «Эйфория» в эфире передачи «Атмосфера», а затем и концертные презентации – в Москве, Санкт-Петербурге, Киеве, Одессе, других городах…
+            <p>В 2009 году группа претерпевает очередные изменения состава. Коллектив оставляют Виталий, Александра и Алла; виолончель и флейта переходят в разряд сессионных инструментов, а место бас-гитариста занимает Евгений Чеботаренко. Несмотря на эти перемены, творческая и концертная жизнь Flёur всё так же кипит. Дюжина новых песен за один лишь этот год приводят Flёur в студию, где в ноябре 2009-го начинается работа над шестым альбомом. Результатом работы становится двухдисковый альбом «Тысяча светлых ангелов». Его презентация проходит 17 апреля 2010-го в эфире интернет-радиостанции «Radio Cardiowave», а за ней следуют концертные презентации в городах Украины и России. Сам альбом размещается на портале Kroogi.Com для свободного прослушивания и скачивания.
+            <p>Лето музыканты Flёur посвящают работе в своих побочных проектах. Дебютные альбомы, один за другим, выпускают Amurekimuri (где участвует Елена Войнаровская) и Ольга Пулатова совместно с группой Verba.
+            <p>Осенью Flёur вновь собираются вместе, чтобы подготовить концертную программу своих лучших песен, и серией концертов в Украине, России и Беларуси отметить свой десятилетний юбилей. Начало 2011-го группа проводит, репетируя концертную программу Flёurescent. Апрельский тур с этой программой, которая состояла из ни разу не исполнявшихся и редко звучащих на концертах песен, охватил ряд городов России и Украины.
+            <p>Начало осени проходит в работе над концертной программой «Живое», включающей новые и неизданные песни. С этой программой Flёur совершают очередной тур, и возвращаются домой, чтобы в конце ноября 2011-го приступить к работе над новым альбомом.
+            <p>Также официально было объявлено о том, что летом 2011 года Flёur начнут запись седьмого студийного альбома. Цифровой релиз альбома «Пробуждение» состоялся в конце февраля 2012 года.
+            <p>В сентябре-октябре 2013 года после долгого творческого перерыва Flёur представили новую концертную программу «Кислород», а затем приступили к записи восьмого студийного альбома, релиз которого состоялся 21 октября 2014 года. В «Штормовое предупреждение» вошли как уже известные песни, так и премьеры. Песня «Утешитель» изначально появилась на сингле «Знаки» и позднее вошла в альбом в немного иной версии.
+            <p>30 августа 2015 года состоялось издание книги-поэтического сборника Елены Войнаровской «Тонкие травинки» и одноимённого музыкального альбома на CD. В сентябре группа в сокращенном составе дала серию концертов, на которых представила новую программу, включившую в себя песни Flёur, сайд-проектов МРФ и Amurekimuri, а также композиции из «Тонких травинок». В ноябре — уже в полном составе — группа вернулась на сцену, чтобы дать несколько ретроспективных концертов, в программу которых вошли песни как из самых ранних альбомов, так и из последней работы «Штормовое предупреждение».
+            <p>В 2016 году Flёur продолжили серию редких выступлений, сыграв за этот период всего несколько концертов полным составом. В основном, группа во главе с Еленой была занята работой над её вторым сольным альбомом «Присутствие». Цифровой релиз «Присутствия» состоялся 3 сентября, а затем, на протяжении сентября-октября, был проведен тур в поддержку альбома.
+            <p>
+                В начале марта 2017 года группа объявила о своём распаде и в мае дала три последних концерта в Харькове, Киеве и Минске.
+            </p>
+        </div>
+        <h1 id="galery">Галерея</h1>
+        <div class="slider-container">
+
+            <input type="radio" class="slide_img" name="slide_img" id="img_1" checked>
+            <input type="radio" class="slide_img" name="slide_img" id="img_2">
+            <input type="radio" class="slide_img" name="slide_img" id="img_3">
+
+            <div class="slides" id="first">
+                <img src="img/k2LmUrnLxhc.jpg" alt="">
+                <img src="img/KbC40Qty600.jpg" alt="">
+                <img src="img/xiktMBeiVsI.jpg" alt="">
+            </div>
+
+            <div class="slides" id="second">
+                <img src="img/Grd86LpDCHc.jpg" alt="">
+                <img src="img/x_a48671ee.jpg" alt="">
+                <img src="img/VmINfJsNqBI.jpg" alt="">
+            </div>
+
+            <div class="slides" id="third">
+                <img src="img/4BRFwmC9m7s.jpg" alt="">
+                <img src="img/HxBV0YMA_cg.jpg" alt="">
+                <img src="img/x_cd8dc58f.jpg" alt="">
+            </div>
+            <div class="switchers">
+                <label class="switcher" id="switcher1" for="img_1"></label>
+                <label class="switcher" id="switcher2" for="img_2"></label>
+                <label class="switcher" id="switcher3" for="img_3"></label>
+            </div>
+
+        </div>
+        <h1 id="albums">Альбомы</h1>
+        <div class="tabs">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Прикосновение</label>
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Волшебство</label>
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Сияние</label>
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4">Все вышло из-под контроля</label>
+            <input id="tab5" type="radio" name="tabs">
+            <label for="tab5">Эйфория</label>
+            <input id="tab6" type="radio" name="tabs">
+            <label for="tab6">Тысяча светлых ангелов</label>
+            <input id="tab7" type="radio" name="tabs">
+            <label for="tab7">Пробуждение</label>
+            <input id="tab8" type="radio" name="tabs">
+            <label for="tab8">Штормовое предупреждение</label>
+            <section id="content-tab1">
+                <iframe frameborder="0" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#album/10058">Слушайте <a href='https://music.yandex.ru/album/10058'>Прикосновение</a></iframe>
+            </section>
+            <section id="content-tab2">
+                <iframe frameborder="0" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#album/10415">Слушайте <a href='https://music.yandex.ru/album/10415'>Волшебство</a></iframe>
+            </section>
+            <section id="content-tab3">
+                <iframe frameborder="0" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#album/10068">Слушайте <a href='https://music.yandex.ru/album/10068'>Сияние</a></iframe>
+            </section>
+            <section id="content-tab4">
+                <iframe frameborder="0" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#album/10323">Слушайте <a href='https://music.yandex.ru/album/10323'>Всё вышло из-под контроля</a></iframe>
+            </section>
+            <section id="content-tab5">
+                <iframe frameborder="0" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#album/10029">Слушайте <a href='https://music.yandex.ru/album/10029'>Эйфория</a></iframe>
+            </section>
+            <section id="content-tab6">
+                <iframe frameborder="0" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#album/498964">Слушайте <a href='https://music.yandex.ru/album/498964'>Тысяча светлых ангелов</a></iframe>
+            </section>
+            <section id="content-tab7">
+                <iframe frameborder="0" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#album/498963">Слушайте <a href='https://music.yandex.ru/album/498963'>Пробуждение</a></iframe>
+            </section>
+            <section id="content-tab8">
+                <iframe frameborder="0" style="border:none;width:100%;height:450px;" width="100%" height="450" src="https://music.yandex.ru/iframe/#album/2292563">Слушайте <a href='https://music.yandex.ru/album/2292563'>Штормовое предупреждение</a></iframe>
+            </section>
+        </div>
+        <h1 id="other">Другие проекты</h1>
+        <div class="container2">
+            <ul>
+                <li><a href="#">Оля и монстр</a></li>
+                <li><a href="#">Аэроплан</a></li>
+                <li><a href="#">Dust Heaven</a></li>
+                <li><a href="#">Verba & Оля Пулатова</a></li>
+                <li><a href="#">МРФ</a></li>
+                <li><a href="#">Amurekimuri</a></li>
+                <li><a href="#">ТИМ</a></li>
+                <li><a href="#">Ёлка у Ивановых</a></li>
+                <li><a href="#">Кто-то падает</a></li>
+                <li><a href="#">НииТи</a></li>
+                <li>Сольные проекты: <a href="#">Елена Войнаровская</a> и <a href="#">Pulatova</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>Страница Вконтакте: <a href="https://vk.com/fleurmusic">https://vk.com/fleurmusic</a></li>
+            <li>Собрание аккордов и текстов: <a href="https://vk.com/fleur_accords">https://vk.com/fleur_accords</a></li>
+            <li>Kroogi: <a href="https://fleur.kroogi.com/?locale=ru">https://fleur.kroogi.com/?locale=ru</a></li>
+        </ul>
+    </footer>
+    <script src="Lab2Script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
